@@ -1,0 +1,50 @@
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.inp-field{
+  width: 300px;
+  padding: 10px;
+  border-bottom: 2px solid;
+  outline: none;
+  border-radius: 5px;
+}
+.btn{
+  padding: 10px;
+  background-color: rgb(228, 148, 218);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.task{
+  display: flex;
+  align-items: center;
+  width: 345px;
+  justify-content: space-between;
+  background-color: rgb(62, 133, 181);
+  color: white;
+  height: 35px;
+  padding: 2px 5px 2px 5px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+}
+.line_through{
+  text-decoration: line-through;
+}
+.checkbox .icon{
+  margin-right: 5px;
+  font-size: 15px;
+}
+.task div span{
+  margin: 0px 5px 0px 4px;
+}
+.task div .icon{
+  cursor: pointer;
+}
