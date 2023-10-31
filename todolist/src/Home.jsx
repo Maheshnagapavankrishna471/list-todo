@@ -7,13 +7,13 @@ import axios from 'axios';
 const Home = () => {
     const [todos, setTodos] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:5000/get')
+        axios.get('https://mahesh-todo-list.onrender.com/get')
         .then(result => setTodos(result.data))
         .catch(err => console.log(err));
     }, []);
 
     const handleEdit = (id) =>{
-        axios.put('http://localhost:5000/update/'+id)
+        axios.put('https://mahesh-todo-list.onrender.com/update/'+id)
         .then(result => {
             location.reload()
         })
@@ -21,7 +21,7 @@ const Home = () => {
     }
 
     const handleDelete = (id) =>{
-        axios.delete('http://localhost:5000/delete/'+id)
+        axios.delete('https://mahesh-todo-list.onrender.com/delete/'+id)
         .then(result => {
             location.reload()
         })
