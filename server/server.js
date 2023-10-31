@@ -24,6 +24,12 @@ app.use(express.json());
 
 async function conn(){
     await mongoose.connect(process.env.MongoDB_URL)
+    .then(() => {
+      console.log("MongoDB connected");
+    })
+    .catch(err => {
+      console.error("MongoDB connection error:", err);
+    });
 }
 
 app.get('/get', (req, res) => {
